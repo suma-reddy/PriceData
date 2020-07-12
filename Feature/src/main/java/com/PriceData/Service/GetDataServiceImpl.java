@@ -34,7 +34,7 @@ public class GetDataServiceImpl implements GetDataService  {
 			if(ls!=null) {
 				for(int i=0;i<ls.size();i++) {
 					
-					ls.get(i).setNewPrice(testRepo.findPriceById(Id));
+					ls.get(i).setNewPrice(testRepo.findPriceById(ls.get(i).getId()));
 				}
 			}
 		}
